@@ -1,2 +1,3 @@
 name: Darren Prong
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title

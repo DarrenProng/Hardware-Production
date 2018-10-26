@@ -8,7 +8,7 @@ Im just starting this blog in the Readme as I slowly figure out how to use Jekyl
 
 ### Student Specifications
 
-list of materials  [Excel](https://github.com/DarrenProng/master/Parts_TEA5767.xlsx) 
+list of materials  [Excel](https://raw.githubusercontent.com/DarrenProng/master/Parts_TEA5767.xlsx) 
 The speakers at the time of ordering werent available;
 solder turned out not to be needed,
 I dont need a soundcard,

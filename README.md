@@ -8,7 +8,7 @@
 Im just starting this blog in the Readme as I slowly figure out how to use Jekyll in conjunction with github pages.
 
 ### Student Specifications
-![Image of Prototype](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/Parts_TEA5767.png) 
+![Image of Prototype](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PartsList.png) 
 The speakers at the time of ordering werent available;
 solder turned out not to be needed,
 I dont need a soundcard,

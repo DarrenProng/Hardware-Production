@@ -18,7 +18,7 @@ For a list of materials please download the [Excel](https://github.com/six0four/
 
 ### Student Sense Hat Assembly
 
-![Image of Prototype](https://raw.githubusercontent.com/six0four/StudentSenseHat/master/images/corelcase.jpg)
+![Image of Prototype](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/tea5767_pinout.png)
 
 ### Student Raspberry Pi Image Creation and Test Code
 

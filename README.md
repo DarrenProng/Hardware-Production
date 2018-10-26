@@ -21,7 +21,7 @@ I also have a spare set of tweeters floating around my apartment that I could us
 The PI b+, the Class D amplifier, and the TEA5767 was all purchased on the 16th.
 
 ![Image of Invoice1](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/invoice_raspberry_amp.png)
-Same goes for the I2C device
+#Same goes for the I2C device
 ![Image of Invoice2](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/tea5767_invoice.png)
 
 ### Student Specifications

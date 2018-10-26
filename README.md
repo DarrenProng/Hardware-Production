@@ -7,26 +7,24 @@
 ### Introduction
 Im just starting this blog in the Readme as I slowly figure out how to use Jekyll in conjunction with github pages.
 
-### Student Specifications
+### Student Parts
 ![Image of Prototype](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PartsList.png) 
 The speakers at the time of ordering werent available;
 solder turned out not to be needed,
 I dont need a soundcard,
 nor a dual channel amplifier.
 I added them in anyways as it could give me opitons later on down the road if I want to upgrade.
-I also have a spare set floating around my apartment that I could use instead.
+I also have a spare set of tweeters floating around my apartment that I could use instead.
 
 The PI b+, the Class D amplifier, and the TEA5767 was all purchased on the 16th.
 
+### Student Specifications
 
 ### Electronic Design Files
 
 ![Image of Prototype](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/tea5767_pinout.png)
 
-
-
 ### Student Raspberry Pi Image Creation and Test Code
-
 
 ### Enterprise Wi-Fi
 

@@ -1,14 +1,16 @@
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Image of Materials](#materials)
-3. [Image of Prototype](#prototype)
+3. [Image of Invoice1](#invoice1)
+4. [Image of Invoice2](#invoice2)
+5. [Image of Prototype](#prototype)
 6. [Enterprise Wi-Fi](#enterprise-wi-fi)
 
 ### Introduction
 Im just starting this blog in the Readme as I slowly figure out how to use Jekyll in conjunction with github pages.
 
 ### Student Parts
-![Image of Prototype](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PartsList.png) 
+![Image of Materials](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PartsList.png) 
 The speakers at the time of ordering werent available;
 solder turned out not to be needed,
 I dont need a soundcard,
@@ -17,6 +19,10 @@ I added them in anyways as it could give me opitons later on down the road if I 
 I also have a spare set of tweeters floating around my apartment that I could use instead.
 
 The PI b+, the Class D amplifier, and the TEA5767 was all purchased on the 16th.
+
+![Image of Invoice1](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/invoice_raspberry_amp.png)
+![Image of Invoice2](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/tea5767_invoice.png)
+
 
 ### Student Specifications
 

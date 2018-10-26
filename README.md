@@ -8,7 +8,7 @@ Im just starting this blog in the Readme as I slowly figure out how to use Jekyl
 
 ### Student Specifications
 
-list of materials  [Excel](https://raw.githubusercontent.com/DarrenProng/master/Parts_TEA5767.xlsx) 
+![Image of Materials](https://raw.githubusercontent.com/DarrenProng/master/images/Parts_TEA5767.png) 
 The speakers at the time of ordering werent available;
 solder turned out not to be needed,
 I dont need a soundcard,
@@ -17,8 +17,6 @@ I added them in anyways as it could give me opitons later on down the road if I 
 I also have a spare set floating around my apartment that I could use instead.
 
 The PI b+, the Class D amplifier, and the TEA5767 was all purchased on the 16th.
-
-
 
 
 ### Electronic Design Files

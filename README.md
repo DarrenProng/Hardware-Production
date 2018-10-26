@@ -1,24 +1,31 @@
-# An interface board for the Broadcom development platform also known as the Raspberry Pi
-
 ## Table of Contents
 1. [Introduction](#introduction)
+2. [Image of Prototype](#prototype)
 6. [Enterprise Wi-Fi](#enterprise-wi-fi)
 
 ### Introduction
+Im just starting this blog in the Readme as I slowly figure out how to use Jekyll in conjunction with github pages.
+
+### Student Specifications
+
+list of materials  [Excel](https://raw.githubusercontent.com/DarrenProng/master/Parts_TEA5767.xlsx) 
+The speakers at the time of ordering werent available;
+solder turned out not to be needed,
+I dont need a soundcard,
+nor a dual channel amplifier.
+I added them in anyways as it could give me opitons later on down the road if I want to upgrade.
+I also have a spare set floating around my apartment that I could use instead.
+
+The PI b+, the Class D amplifier, and the TEA5767 was all purchased on the 16th.
 
 
-### Student Sense Hat Specifications
-
-For a list of materials please download the [Excel](https://github.com/six0four/StudentSenseHat/blob/master/electronics/StudentSenseHatV05_bom.xlsx) file in the repository.
-	
-###### Additional items that are only added to those devices in the Humber Parts Crib
-
-### Student Sense Hat Electronic Design Files
 
 
-### Student Sense Hat Assembly
+### Electronic Design Files
 
-![Image of Prototype](https://raw.githubusercontent.com/six0four/StudentSenseHat/master/images/corelcase.jpg)
+![Image of Prototype](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/tea5767_pinout.png)
+
+
 
 ### Student Raspberry Pi Image Creation and Test Code
 

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+<head>
+	
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="/Hardware-Production/css/main.css">
-  </head>
+	
+</head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       
@@ -47,7 +48,7 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 <h2>Week 11 (Nov. 13th)</h2> 	
 </head>
 	    	    
-	<!--Testing sensor with PI-->	
+	<!-d-Testing sensor with PI-->	
 <head>
 <h2>Week 10 (Nov. 6th)</h2>
 </head>
@@ -55,13 +56,85 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
   	<!--Soldering new sensor onto PCB-->
 <head>
 <h2>Week 9 (Oct.30th)</h2>
+	<p>
+		I just received my sensor this week. Heres proof.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/ShippingPackage.png"></img>	
+	<p>
+		I then asked Vlad in the prototype lab for some help in soldering this onto my PCB.
+		These are the first soldered connections i've ever made.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/FirstConnections.png"></img>
+	<p>
+		I then moved onto soldering the rest of the jumper wires, and the via's, as well as my two screw terminals
+		for audio Left and audio Right.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/TEA5767_soldered.jpg"></img>
+	<p>
+		As I had these finished fairly quickly, I measured it up against my PI to see how they would
+		mate-up, and was reminded by a classmate about the stackable headers that were available
+		in the prototype lab. So I grabbed a 40-pin header from the lab and soldered one on.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/BottomLayer.jpg"></img>
+	<p>
+		Unfortunately, the lab had closed up by this point, so ill have to wait till next week to plug it into my PI.
+	</p>
 </head> 
 		
 	<!--Enterprise Wi-Fi-->
 <head>   
 <h2>Week 8 (Oct. 23rd)</h2>
+	<p>
+		My sensor has yet to show up, however I decided to prepare my PI before it gets here.
+		My first requirement was to flash an SD card with raspian-stretch (version.x.x), and get it 
+		booted up and ready to go.
+	</p>
+<!--Which raspian version and where to get it-->
+<!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->
+	<p>
+		I ended up with a raspberry PI that couldn't boot, and fear immediately set in that my
+		little computer was Dead on Arrival. All that would display in my monitor was a 
+		small lightning bolt in the top right corner beside a "color correction" screen. Kristian 
+		(our instructor) informed me that that icon is usually displayed when the PI has recieved
+		insufficent power for the particular power adapter. So we tested a few different power 
+		supplies from the parts crib, with no luck unfortunately.
+	</p> 
+<!--Which power supply to use with 3b+ -->
+<!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->
+	<p>
+		Later that night I messaged the retailer with my issue along with a plea for any additional help.
+		I got a response the next day with a question as which displays, which power supplies, and with some
+		new info on my particular raspberry PI.
+	</p>
+<!-- tech support conversation>
+<!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->
+	<p>
+		After I responded with the corresponding information, their tech support employee pointed out 
+		that the issue could also have been due to an improper flashing of my SD card. I used 
+		Win32DiskImager at first, but rushed through the instructions and messed them up obviously.
+		The technician recommended Etcher, I'd never heard of this tool. Its install, and basic UI, 
+		and usage made it hard to mess up. Which I didnt, this time.
+	</p>
+<!--Etchers UI-->
+<!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->
+	<p>
+		After I flashed the OS onto the card and plugged it in, the Pi booted up...yay!
+	</p>
+<!--raspian boot page-->
+<!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->
 </head>
+	<p>
+		So for the first thing to setup was Enterprise wifi. I went onto our course website and downloaded
+		the necessary certificate and copied over the setup instructions into my readme. <!-- something i need to remember to include-->
+		As with most of these steps, I recieved a lot of help for the two gentlemen in the Prototype lab.
+		Here are some of the instructions I followed:
+	</p>
+<!--Exact steps from the instructions I followed and why-->
+<!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->
+	<p>
 		
+	</p>
+
  	<!--Selecting and ordering components-->
  <head>
  <h2>Week 7 (Oct. 16th)</h2>
@@ -84,11 +157,39 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
   <h2>Week 6 (Oct. 9th)</h2>
   </head>
   <h1>STUDY DAY</h1>
+	<p>
+		On our week off for this class I came into the prototype lab to start designing my PCB; on which
+		my TEA5767 will be mounted. I started messing around with the software, but was also working on 
+		finding some other examples online of a completed device. I was hoping to build a more complex 
+		version of the device im currently working on, but at the time I realized that a simple FM 
+		reciever was the most cost and time-effective way to complete this project. Cost being a 
+		significant limiting factor in my situation this semester.
+	</p>
+<!--full budget ? and some other examples of TEA5767 devices and circuits and usages-->
+<!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->
+	<p>
+		It wasn't until one to one and a half weeks later that I returned to designing my PCB
+		using Fritzing. I'm going to post my progress for that here in order to keep things 
+		consistent. I went through a few different iterations of this design, but heres how
+		it ended up being designed:
+	</p>
+<!--The normal unedited fitzing diagram-->
+<!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->
+	<p>
+		Unfortunately, I made a critical error in this design, which I didnt catch. Even after
+		I had redone this design half a dozen times. My traces to the GND pin in this diagram:
+	</p>
+<!--Edited Fritzing diagram showing which pin is in the wrong location-->
+<!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->
+	<p>
+		are actually offset by one pin. I wish I had caught this, as when I try to troubleshoot in a few weeks
+		as to why the device isnt being detected, ill short out the PI for good.
+	</p>
 		
 	<!--Electronic Design Files -->	    
 <head> 
 <h2>Week 5 (Oct. 2nd)</h2>
-    
+</head>
 	<p>
 	This is a list of pins associated with my sensor
 	</p>
@@ -97,33 +198,54 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 	This is how i'll be connecting them to my Raspberry PI 
 	</p>
 <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/pinout_TEA5767module.png"> </img>
-</head> 
 	
-	<!-- Student Specifications-->
+	<p>
+		This is an example I found online of the TEA5767 in use.
+		In this particular case, they're using a custom PCB to connect a few different
+		devices to the Raspberry PI. The end goal for this enginneer was to be able to tune,
+		select, play/pause, FM radio stations with an audio amplifier. Routing 2 
+		external speakers to a random amplifier (couldn't find this one online) for audio. 
+		A USB hub, to extend the PI's functionality with a Wifi dongle and 
+		a Microphone to pick up the voice commands.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/cabling.png"></img>
+	<p>
+		A picture of the prototype they developed:
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/radiomodulePCB.png"></img>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/radiomodulePCB_back.png"></img>
+	<p>
+		A little too complex for me but the design supplied some good ideas
+		for my own project.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PCB.png"></img> 
+	<p>
+		I've never used any fritzing software, but this looks like a good reference to come
+		back to when I start designing mine. They have all the traces on the underside of the
+		PCB. Im not sure if ill have to have them on both sides, it depends on the surface mounts 
+		I decide on using.
+	</p>
+
+	<!-- Submitted Project Budget & Specifications-->
 <head> 
 <h2>Week 4 (Sept. 25th)</h2>
 </head>
-	   
- <h2>Submitted Project Budget:</h2>	  
+	   	  
  <p>
 	 Heres a list of my parts to be ordered:
  </p>
   	
   <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PartsList.png"></img>
 	  
-	<!--? not sure-->
+	<!--Submitted Project Schedule-->
 <head> 	  
 <h2>Week 3 (Sept. 18th)</h2>
 </head>
  
- <h2>Submitted Project Schedule:</h2>
- 
-	<!--? not sure-->
+	<!--Submitted Project Proposal-->
 <head> 
 <h2>Week 2 (Sept. 11th)</h2>
 </head>
- 
-<h2>Submitted Project Proposal:</h2>
 
 	<!--Blinking light on a raspberry pi -->
 <head>

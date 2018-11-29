@@ -37,43 +37,98 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 <head>	    	    
  <h2>Week 13 (Nov.27th)</h2> 	
 	<p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img>
-	</p> 
-</head>
-         <!--Test code and assembled prototype-->	    
-<head>            
-<h2>Week 12 (Nov.20th)</h2> 
+		This week I designed and printed a enclosure meant to house my PCB/device which is attached to 
+		the PI via a 40pin stackable header. It was looking promising until I actually placed
+		the PCB inside. Heres a pic:
+	</p>	
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/Enclosure_Prototype.jpg"></img>
 	<p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img>
+		The cutouts for the middle plate are slightly off kilter, as well, the USB ports are pushing up on the
+		plate. My idea here was to support the PCB with the piece of acryillic (with standoffs of course).
+		
+		Tape measure for scale, heres a better picture of my mistake.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/MiddlePlate.jpg"></img>
+	<p>
+		I tweaked the drawing in CorelDraw so the cutouts are about 3mm higher for the side plate.
+		
+		The opposite side plate has only one cutout for the on tab on the middle plate. No need
+		to adjust that cutout, however, I had flipped the outline which messed up alignment. 
+		Ill need to reprint that side. I had to omit the far end tab to accommodate the 40 pin header.
+		
+		The square cutout (closest to the tape measure) isn't necessary, however, it does 
+		make for better passive cooling or some extra space for my soldered pins to float in. 
+	</p>
+</head>
+          <!--Fried PI and Resolution-->		    
+<head>            
+<h2>Week 12 (Nov.20th)</h2> 	
+	<p>
+		My working setup in lab...
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/20181120_174603.jpg"></img>
+	<p>
+		Unfortunately, I destroyed my raspberry PI with the newly soldered PCB/device combo. The problem
+		turned out to be my incorrect tracing to ground. When trying to test where the problem originated
+		I ended up connecting 3-5V to the GPIO pin7, frying this board for good.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/TEA5767_fritz_pcb.png"></img>
+	<p>
+		Luckily, I was able to transfer my SD card with my files and configuration over to a spare
+		PI the parts crib lent me.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/CurrentSetup.jpg"></img>
+	<p>
+		So the moral of my story is, double check all your connections before hooking up power, no 
+		matter how sure you are.
+	</p>
+	<p>
+		I began testing my sensor in the lab this week, with some strange results.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PythonFailure_ScreenCap.jpg"></img>
+	<p>
+		Im able to detect the sensor via i2cdetect (address 0x60) however, when I tried to run 
+		TEA5767stationscanner.py the Python shell throws an import error. Ive been trying to resolve this issue
+		with manually updating my python version and its available libraries. With no luck so far.
+		I got the code off LinuxCircle/TEA5767 (on github) which has little info on running the code other than 
+		what can be seen here in the comment header. It also lists some further references, which ill be heading 
+		to for more instructions and info. 
 	</p>
 </head>
 
-        <!--Fried PI and Resolution-->
+	<!--Testing sensor with PI-->	
 <head>		
 <h2>Week 11 (Nov. 13th)</h2> 	
 	
 	<p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img>
+		I got most of my parts together and heres them assembled and detected.
+	</p>
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/StackableHeader_RaspberryPI.jpg"></img>	
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/i2cdetect.jpg"></img>
+
+	<p>
+		im still using the standard case to protect my PI. This case is too small to fit both the PI and the
+		PCB/device, so ill have to modify these files to accomodate both.
 	</p>	    	    
 
 </head>
-	<!--Testing sensor with PI-->	
+	
 <head>
 <h2>Week 10 (Nov. 6th)</h2>
-	<p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img>
-	</p>
+	
 </head>
   	<!--Soldering new sensor onto PCB-->
 <head>
 <h2>Week 9 (Oct.30th)</h2>
 	<p>
-		I just received my sensor this week. Heres proof.
+		I just received my sensor this week. Would have never arrived if it wasn't for a classmate who had
+		done this class already. He pointed out a great US based website "oddwires.com" which shipped it
+		to me in no time. Next time, don't cheap out on chinese products!
 	</p>
 <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/ShippingPackage.png"></img>	
 	<p>
 		I then asked Vlad in the prototype lab for some help in soldering this onto my PCB.
-		These are the first soldered connections i've ever made.
+		These are the first soldered connections I've ever made.
 	</p>
 <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/FirstConnections.png"></img>
 	<p>
@@ -114,8 +169,8 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 <!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->
 	<p>
 		Later that night I messaged the retailer with my issue along with a plea for any additional help.
-		I got a response the next day with a question as which displays, which power supplies, and with some
-		new info on my particular raspberry PI.
+		I got a response the next day with a question as to which displays, which power supplies I used 
+		and some new info on my particular raspberry PI.
 	</p>
 <!-- tech support conversation-->
 <!-- <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/.png"></img> -->

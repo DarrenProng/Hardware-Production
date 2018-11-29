@@ -41,14 +41,14 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 		the PI via a 40pin stackable header. It was looking promising until I actually placed
 		the PCB inside. Heres a pic:
 	</p>	
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/Enclosure_Prototype.jpg" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/Enclosure_Prototype.jpg" height="400" width="600">
 	<p>
 		The cutouts for the middle plate are slightly off kilter, as well, the USB ports are pushing up on the
 		plate. My idea here was to support the PCB with the piece of acryillic (with standoffs of course).
 		
 		Tape measure for scale, heres a better picture of my mistake.
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/MiddlePlate.jpg" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/MiddlePlate.jpg" height="400" width="600">
 	<p>
 		I tweaked the drawing in CorelDraw so the cutouts are about 3mm higher for the side plate.
 		
@@ -66,18 +66,18 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 	<p>
 		My working setup in lab...
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/20181120_174603.jpg" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/20181120_174603.jpg" height="400" width="600">
 	<p>
 		Unfortunately, I destroyed my raspberry PI with the newly soldered PCB/device combo. The problem
 		turned out to be my incorrect tracing to ground. When trying to test where the problem originated
 		I ended up connecting 3-5V to the GPIO pin7, frying this board for good.
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/TEA5767_fritz_pcb.png" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/TEA5767_fritz_pcb.png" height="400" width="600">
 	<p>
 		Luckily, I was able to transfer my SD card with my files and configuration over to a spare
 		PI the parts crib lent me.
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/CurrentSetup.jpg" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/CurrentSetup.jpg" height="400" width="600">
 	<p>
 		So the moral of my story is, double check all your connections before hooking up power, no 
 		matter how sure you are.
@@ -85,7 +85,7 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 	<p>
 		I began testing my sensor in the lab this week, with some strange results.
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PythonFailure_ScreenCap.jpg" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PythonFailure_ScreenCap.jpg" height="400" width="600">
 	<p>
 		Im able to detect the sensor via i2cdetect (address 0x60) however, when I tried to run 
 		TEA5767stationscanner.py the Python shell throws an import error. Ive been trying to resolve this issue
@@ -103,8 +103,8 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 	<p>
 		I got most of my parts together and heres them assembled and detected.
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/StackableHeader_RaspberryPI.jpg" height="400" width="400">	
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/i2cdetect.jpg" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/StackableHeader_RaspberryPI.jpg" height="400" width="600">	
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/i2cdetect.jpg" height="400" width="600">
 
 	<p>
 		im still using the standard case to protect my PI. This case is too small to fit both the PI and the
@@ -125,23 +125,23 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 		done this class already. He pointed out a great US based website "oddwires.com" which shipped it
 		to me in no time. Next time, don't cheap out on chinese products!
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/ShippingPackage.png" height="400" width="400">	
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/ShippingPackage.jpg" height="400" width="600">	
 	<p>
 		I then asked Vlad in the prototype lab for some help in soldering this onto my PCB.
 		These are the first soldered connections I've ever made.
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/FirstConnections.png" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/FirstConnections_toplayer.jpg" height="400" width="600">
 	<p>
 		I then moved onto soldering the rest of the jumper wires, and the via's, as well as my two screw terminals
 		for audio Left and audio Right.
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/TEA5767_soldered.jpg" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/TEA5767_soldered.jpg" height="400" width="600">
 	<p>
 		As I had these finished fairly quickly, I measured it up against my PI to see how they would
 		mate-up, and was reminded by a classmate about the stackable headers that were available
 		in the prototype lab. So I grabbed a 40-pin header from the lab and soldered one on.
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/BottomLayer.jpg" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/BottomLayer.jpg" height="400" width="600">
 	<p>
 		Unfortunately, the lab had closed up by this point, so ill have to wait till next week to plug it into my PI.
 	</p>
@@ -214,7 +214,7 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 		I also have a spare set of tweeters floating around my apartment that I could use instead.
 		The PI b+, the Class D amplifier, and the TEA5767 was all purchased on the 16th.
 		</p>
-	<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/invoice_raspberry_amp.png" height="400" width="400">
+	<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/invoice_raspberry_amp.png">
 				
 <head> 
 	
@@ -258,11 +258,11 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 	<p>
 	This is a list of pins associated with my sensor
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/tea5767_pinout.png" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/tea5767_pinout.png" >
 	<p>
 	This is how i'll be connecting them to my Raspberry PI 
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/pinout_TEA5767module.png" height="400" width="400"> 
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/pinout_TEA5767module.png" > 
 	
 	<p>
 		This is an example I found online of the TEA5767 in use.
@@ -273,17 +273,17 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 		A USB hub, to extend the PI's functionality with a Wifi dongle and 
 		a Microphone to pick up the voice commands.
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/cabling.png" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/cabling.png" >
 	<p>
 		A picture of the prototype they developed:
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/radiomodulePCB.png" height="400" width="400">
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/radiomodulePCB_back.png" height="400" width="400">
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/radiomodulePCB.png" >
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/radiomodulePCB_back.png" >
 	<p>
 		A little too complex for me but the design supplied some good ideas
 		for my own project.
 	</p>
-<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PCB.png" height="400" width="400"> 
+<img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PCB.png"> 
 	<p>
 		I've never used any fritzing software, but this looks like a good reference to come
 		back to when I start designing mine. They have all the traces on the underside of the
@@ -300,7 +300,7 @@ I will be using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
 	 Heres a list of my parts to be ordered:
  </p>
   	
-  <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PartsList.png" height="400" width="400">
+  <img src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PartsList.png">
 	  
 	<!--Submitted Project Schedule-->
 <head> 	  

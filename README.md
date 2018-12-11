@@ -1,6 +1,6 @@
 # TEA5767 FM Radio Receiver Module
-# Created by: Darren Prong at Humber College Technical Laboratories
-# CENG 317 Instructor: Kristian Medri
+## Created by: Darren Prong at Humber College Technical Laboratories
+## CENG 317 Instructor: Kristian Medri
 
 ## Table of Contents
 1. [Introduction](#introduction)

@@ -90,17 +90,25 @@ Next, the 40-pin stackable header, along with the two screw terminals to be used
 
 ![Image of Bottom](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/BottomLayer.jpg)
 
+![Image of Top](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/TEA5767_soldered.png)
+
 I also left my male 40-pin header plugged in, so I didnt lose it. However, you'll notice it doesn't rest flush up agaisnt the the female header. This could potentially damage both headers as well as the device. 
+
+Best practice would be to disconnect from the PI each time your completed testing. 
 
 ![Image of PI](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PI_tea5767_PCB.JPG)
 
-Best practice would be to disconnect from the PI each time your completed testing. 
+You can now solder on a length of wire (up to you how long) to act as the antenna. Solder this in a similar way as you did with the via's.
  
  Next and final step for assembly, attach your PI to the base plate of the acryllic enclosure with the ordered hardware and printed standoffs. 
  
  ![Image of Hardware](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PI_Hardware.JPG)
  
- Do one hole at a time. Keep the device firmly planted on a flat surface. (hang over on hole on the edge of a table for example) place the standoffs in between the board and the base plate. Line up the holes, and insert a screw. While keeping the screw in place with your small philips head screw driver, place a nut on the threads with the needle nose pliers. The pliers are to be help still, just keep the nut from turning. Use the screw driver to tighten, just until enough threads are engaged to hold the screw in place. Repeat for all four holes. Final step is to tighten down snugly, not firmly, on all four screws.
+ Do one hole at a time. Keep the device firmly planted on a flat surface. (hang over on hole on the edge of a table for example) place the standoffs in between the board and the base plate. Line up the holes, and insert a screw. While keeping the screw in place with your small philips head screw driver, place a nut on the threads with the needle nose pliers. The pliers are to be help still, just keep the nut from turning. Use the screwdriver to tighten, just until enough threads are engaged to hold the screw in place. Repeat for all four holes. Final step is to tighten down snugly, not firmly, on all four screws.
+
+The final product:
+
+![Image of Case](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PI_IOPanel.JPG)
 
 You can now attach all parts of the enclosure to the base, and plug in the PCB/device combo into the GPIO pins.
 

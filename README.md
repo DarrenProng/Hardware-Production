@@ -17,8 +17,19 @@
 
 
 ### Introduction
+![Image of Prototype](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/CurrentSetup.jpg)
+
+This list will allow you to complete a working FM Radio Receiver using the Raspberry PI 3b+ in conjunction with a TEA5767 I2C device.
+
+Ill start by listing the required components, where to buy them, how to design then assemble those components, then finalize with testing the device in an appropriate enviroment.
+
+This project was completed over a 15-week semester, however with these steps, a working prototype could be completed in a week from purchasing components to hearing music on the receiver.
+
 
 ### Specifications
+Heres a list of all parts needed to complete this project.
+![Image of Parts](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PartsList_Updated.png)
+
 
 ### Design Files
 

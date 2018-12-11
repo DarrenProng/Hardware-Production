@@ -77,8 +77,6 @@ Next step will be to solder a jumper wire from each terminal on the sensor to th
 
 ![Image of Connection](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/FirstConnections_toplayer.jpg)
 
-![Image of Jumpers](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/TEA5767_soldered)
-
 Next will be to solder the via's. I recommend that you take a small amount of 20gauge wire(1cm in length) strip only one end and then insert into all the via's. This will hold it inside the via briefly while you solder the flip side. Solder the entire side with exposed wire first, then flip, remove the insulation, and solder that side for each via.
 
 Double check the shape of each via and how the solder "flows" from the wire onto the copper pad. This ensures a solid connection. It should appear like a sloping hill, or a "Hershey Kiss".
@@ -117,3 +115,17 @@ The final product:
 ### Test Code
 
 The first step in making sure your PI will be able to play music will be its ability to first boot up, then to enable I2C devices, then to detect that the PI can recognize the sensor.
+
+First, enable the I2C bus on your PI.
+
+Open a command terminal.
+
+The command to be run here is: sudo i2cdetect -y 1
+
+This will display all open addresses and will display a hexadecimal value representing the module.
+
+My address is 0x60. 
+
+![Image of Detecting](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/i2cdetect.jpg)
+
+As you can see, the Pi can detect my device!

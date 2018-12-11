@@ -28,7 +28,7 @@ This project was completed over a 15-week semester, however with these steps, a 
 
 ### Specifications
 Heres a list of all parts needed to complete this project.
-![Image of Parts](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PartsList_Updated.png)
+![Image of Parts](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PartsList_Updated.PNG)
 
 
 ### Design Files

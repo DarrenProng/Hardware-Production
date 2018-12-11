@@ -90,7 +90,7 @@ Next, the 40-pin stackable header, along with the two screw terminals to be used
 
 ![Image of Bottom](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/BottomLayer.jpg)
 
-![Image of Top](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/TEA5767_soldered.png)
+![Image of Top](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/TEA5767_soldered.jpg)
 
 I also left my male 40-pin header plugged in, so I didnt lose it. However, you'll notice it doesn't rest flush up agaisnt the the female header. This could potentially damage both headers as well as the device. 
 

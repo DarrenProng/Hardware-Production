@@ -69,10 +69,13 @@ And for the enclosure, CorelDRAW was used on a free 15-day trial as well as acce
 The enclosure on CorelDRAW:
 
 ![Image of Enclosure](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/Final_Enclosure_TEA5767.jpg)
+![Image of Pieces](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PI_Enclosure.JPG)
+![Image of BarePi](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PI_B+.JPG)
+![Image of PiPorts](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PI_DataPorts.JPG)
+![Image of PI_SDCardPanel](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/PI_SDCardPanel.JPG)
 
 After these are designed, you can send the fritzing file away to be printed.
 The enclosure was printed a few times, with minor changes for each new job. Its still not a perfect fit, but the file you have here [Enclosure](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/Final_Enclosure_TEA5767.cdr) will work but the fit is tight, and the middle plate is under pressure from the USB ports pressing from underneath causing it to bend slightly. 
-
 
 ### Assembly
 Once the parts are in hand, the design files printed and assembled, Heres what you should have in hand:

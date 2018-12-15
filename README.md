@@ -118,14 +118,145 @@ The first step in making sure your PI will be able to play music will be its abi
 
 First, enable the I2C bus on your PI.
 
-Open a command terminal.
+Go to:
+/boot/config.txt
+
+add these lines to the bottom of the file:
+```
+    dtparam=i2c_arm=on
+    dtparam=spi=on
+    dtparam=i2s=on
+    dtparam=i2c1=on
+```
+
+Next, type:	
+```gpio -v
+ ```
+	
+ Make sure you have WiringPi libraries installed
+	If no version is available, please try the following commands:
+ 
+
+	```sudo apt-get install upgrade
+ 
+	sudo apt-get install update
+
+	sudo apt-get install i2c-tools
+ 
+	sudo apt-get install wiringpi
+
+ ```
+ ```
+ Use nano to edit this next file
+ 
+```sudo nano /etc/modules
+```
+Add 
+```i2c-bcm2708
+```
+and
+```i2c-dev
+```
+at the bottom of the file
+
+Also, we need to enable i2c at boot. So now we run the:
+
+```sudo raspi-config
+```
+Next, navigate through the first menu 
+
+<!-- answer from: anonymoose March 9th 2017 Source. https://raspberrypi.stackexchange.com/questions/63076/advanced-options-i2c-not-showing -->
+
+found this at raspberrypi.stackexchange.com//questions/63076/advanced-options-i2c-not-showing. This shows step by step what to do in a 12 second .gif.
+
+![Image of EnableConfig](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/I2C_enable.gif)
+
+After the I2C bus has been enabled, the /modules file edited and saved, any missing libraries installed;
+open a new file for editing in VIM. Name the file radio.c. 
+```
+radio.c
+
+#include <wiringPi.h>
+
+#include <wiringPiI2C.h>
+
+#include <stdio.h>
+
+#include <stdlib.h>
+
+int main( int argc, char *argv[]) {
+
+  printf ("RPi - tea5767 Philips FM Tuner v0.3 \n") ;
+
+  unsigned char radio[5] = {0};
+
+  int fd;
+
+  int dID = 0x60; // i2c Channel the device is on
+
+  unsigned char frequencyH = 0;
+
+  unsigned char frequencyL = 0;
+
+  unsigned int frequencyB;
+
+  double frequency = strtod(argv[1],NULL);
+
+  frequencyB=4*(frequency*1000000+225000)/32768; //calculating PLL word
+
+  frequencyH=frequencyB>>8;
+
+  frequencyL=frequencyB&0XFF;
+
+  printf ("Frequency = "); printf("%f",frequency);
+
+  printf("\n"); // data to be sent
+
+  radio[0]=frequencyH; //FREQUENCY H
+
+  radio[1]=frequencyL; //FREQUENCY L
+
+  radio[2]=0xB0; //3 byte (0xB0): high side LO injection is on,.
+
+  radio[3]=0x10; //4 byte (0x10) : Xtal is 32.768 kHz
+
+  radio[4]=0x00; //5 byte0x00)
+
+ 
+
+ if((fd=wiringPiI2CSetup(dID))<0){
+
+ printf("error opening i2c channel\n\r");
+
+ }
+
+write (fd, (unsigned int)radio, 5) ;
+
+return 0;
+
+}
+```
+Once saved as radio.c, 
+
+```
+gcc -o radio radio.c -lwiringPi
+```
+
+Credit for the above code goes to "halfluck" on the Raspberry Pi forums.
+```https://www.raspberrypi.org/forums/viewtopic.php?t=53680&p=419429```
 
 The command to be run here is: sudo i2cdetect -y 1
 
-This will display all open addresses and will display a hexadecimal value representing the module.
-
-My address is 0x60. 
+This will display all open addresses and will display a hexadecimal value representing the module. We need 0x60. 
 
 ![Image of Detecting](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/i2cdetect.jpg)
 
-As you can see, the Pi can detect my device!
+If you see any other address, there may be some other issue regarding your device; I would look into this guide:
+
+https://raspberrypi.stackexchange.com/questions/76072/inconsistent-i2c-bus-address-listings-causing-sensor-reading-issues
+
+or many others like it across the web. 
+
+If you've followed to here though, there should be no problem.
+
+

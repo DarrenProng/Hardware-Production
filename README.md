@@ -131,14 +131,13 @@ add these lines to the bottom of the file:
 
 Next, type:	
 ```
-gpio -v
- ```
+	gpio -v
+```
 	
  Make sure you have WiringPi libraries installed
-	If no version is available, please try the following commands:
- 
+	If no version is available, please try the following commands: 	
 
-	```
+ ```
 	sudo apt-get install upgrade
  
 	sudo apt-get install update
@@ -146,22 +145,24 @@ gpio -v
 	sudo apt-get install i2c-tools
  
 	sudo apt-get install wiringpi
+```
+```
+	sudo nano /etc/modules
+```
 
- ```
- ```
- Use nano to edit this next file
- 
-```
-sudo nano /etc/modules
-```
 Add 
+
 ```
-i2c-bcm2708
+	i2c-bcm2708
 ```
+
 and
+
 ```
-i2c-dev
+	i2c-dev
+
 ```
+
 at the bottom of the file
 
 Also, we need to enable i2c at boot. So now we run the:

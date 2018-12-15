@@ -123,43 +123,43 @@ Go to:
 
 add these lines to the bottom of the file:
 ```
-    dtparam=i2c_arm=on
-    dtparam=spi=on
-    dtparam=i2s=on
-    dtparam=i2c1=on
+dtparam=i2c_arm=on
+dtparam=spi=on
+dtparam=i2s=on
+dtparam=i2c1=on
 ```
 
 Next, type:	
 ```
-	gpio -v
+gpio -v
 ```
 	
  Make sure you have WiringPi libraries installed
 	If no version is available, please try the following commands: 	
 
  ```
-	sudo apt-get install upgrade
+sudo apt-get install upgrade
  
-	sudo apt-get install update
+sudo apt-get install update
 
-	sudo apt-get install i2c-tools
+sudo apt-get install i2c-tools
  
-	sudo apt-get install wiringpi
+sudo apt-get install wiringpi
 ```
 ```
-	sudo nano /etc/modules
+sudo nano /etc/modules
 ```
 
 Add 
 
 ```
-	i2c-bcm2708
+i2c-bcm2708
 ```
 
 and
 
 ```
-	i2c-dev
+i2c-dev
 
 ```
 
@@ -250,9 +250,15 @@ gcc -o radio radio.c -lwiringPi
 ```
 
 Credit for the above code goes to "halfluck" on the Raspberry Pi forums.
-```https://www.raspberrypi.org/forums/viewtopic.php?t=53680&p=419429```
+```
+https://www.raspberrypi.org/forums/viewtopic.php?t=53680&p=419429
 
-The command to be run here is: sudo i2cdetect -y 1
+```
+
+The command to be run here is: 
+```
+sudo i2cdetect -y 1
+```
 
 This will display all open addresses and will display a hexadecimal value representing the module. We need 0x60. 
 

@@ -283,10 +283,9 @@ Now we're ready to play music but most likely you haven't plugged in your speake
 from an old set I found at my house. One was broken and couldn't play anything, and the other was working just fine.
 Test them first in your amplifier. Supply a low power frequency to the input of the LM386, shown here:
 
+![Image of Amplifier](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/LCM386_TestAmp.jpg)
 
+Heres it breadboarded virtually using fritzing:
 
-
-
-
-
+![Image of Amplifier](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/LM386_breadboard.png)
 

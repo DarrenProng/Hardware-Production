@@ -38,12 +38,21 @@ I had intitially proposed a $108 total budget.
 
 Here is the updated budget
 These are the costs to be expected, at least at a minimum.
+This was the first attempt at wrangling up some of these cheap sensors.
+I went for the cheapest option, and they never arrived.
 
 ![Image of Invoice1](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/tea5767_invoice.png)
 
+Therefore, go for the one that works, and is quick. I bought the back up at oddwires.com for $15.25 USD:
+
+![Image of Invoice3](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/Invoice3.png)
+
+The Pi 3B+ is also my choice for which version to go with. 
+
 ![Image of Invoice2](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/invoice_raspberry_amp.png)
 
-![Image of ](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/)
+Its the same price as the other Pi's but if you already have the associated pieces for assembly, no need to order a whole parts
+kit.
 
 Again, these prices are location dependent, as your geographical situation could greatly increase shipping costs or parts availablity. 
 As well, in our prototyping lab, we have access to a $20,000 laser cutter, a lot of spare components and tools, the expertise of professionals, and a great deal more time.
@@ -139,33 +148,30 @@ gpio -v
 
  ```
 sudo apt-get install upgrade
- 
 sudo apt-get install update
-
 sudo apt-get install i2c-tools
- 
 sudo apt-get install wiringpi
-
 sudo apt-get install smbus
 ```
+Now we need to edit the file
 ```
 sudo nano /etc/modules
 ```
 
-Add 
+Add these lines here: 
 
 ```
 i2c-bcm2708
 ```
 
-and
+and here:
 
 ```
 i2c-dev
 
 ```
 
-at the bottom of the file
+at the bottom of the file, and remember to write to file before exiting.
 
 Also, we need to enable i2c at boot. So now we run the:
 

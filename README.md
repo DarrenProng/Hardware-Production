@@ -296,3 +296,13 @@ Heres it breadboarded virtually using fritzing:
 
 ![Image of Amplifier](https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/images/LM386_breadboard.png)
 
+Once you test has gone through with your speaker, test it out while running the PI hooked up to the amp.
+```
+sudo ./radio xx.x //your radio station frequency of choice
+```
+It should come out sounding a little something like this:
+
+<video width="400" height="600" controls>
+	<source src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/WorkingDemo_TEA5767.mp4" type="video/mp4">
+</video>
+

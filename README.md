@@ -302,8 +302,4 @@ sudo ./radio xx.x //your radio station frequency of choice
 ```
 It should come out sounding a little something like this:
 
-<video width="400" height="600" controls>
-	<source src="https://raw.githubusercontent.com/DarrenProng/Hardware-Production/master/WorkingDemo_TEA5767.mp4" type="video/mp4">
-</video>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gSB8UnMIgSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/gSB8UnMIgSc

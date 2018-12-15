@@ -145,6 +145,8 @@ sudo apt-get install update
 sudo apt-get install i2c-tools
  
 sudo apt-get install wiringpi
+
+sudo apt-get install smbus
 ```
 ```
 sudo nano /etc/modules
@@ -270,6 +272,15 @@ https://raspberrypi.stackexchange.com/questions/76072/inconsistent-i2c-bus-addre
 
 or many others like it across the web. 
 
-If you've followed to here though, there should be no problem.
+If everything is looking good, you can continue.
+Now we're ready to play music but most likely you haven't plugged in your speakers. I had two 4.3ohm desktop speakers
+from an old set I found at my house. One was broken and couldn't play anything, and the other was working just fine.
+Test them first in your amplifier. Supply a low power frequency to the input of the LM386, shown here:
+
+
+
+
+
+
 
 
